@@ -136,8 +136,8 @@ static NSString * const writeCharacteristicUUID = @"5FC569A0-74A9-4FA4-B8B7-8354
         
         // And connect
         NSLog(@"Connecting to peripheral %@", peripheral);
-//        [connectedTo setText:peripheral.name];
-        [connectedTo setText:@"1234 Fake Street"];
+        [connectedTo setText:peripheral.name];
+//        [connectedTo setText:@"1234 Fake Street"];
         
         [self.centralManager connectPeripheral:peripheral options:nil];
     }
